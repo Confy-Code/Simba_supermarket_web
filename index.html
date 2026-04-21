@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simba Supermarket | Rwanda's Online Supermarket</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-links">
+                    <span><i class="fas fa-mobile-alt"></i> Download App</span>
+                    <span><i class="fas fa-globe"></i> English / RWF</span>
+                </div>
+                <div class="top-user-links">
+                    <button id="theme-toggle" title="Toggle Light/Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="help.html">Help Center</a>
+                    <a href="#">Login / Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><h1>Simba<span>Supermarket</span></h1></a>
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search for products, categories...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-icons">
+                    <a href="cart.html" class="icon-item cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge">0</span>
+                        <span>Cart</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="category.html?cat=Cosmetics">Cosmetics</a></li>
+                    <li><a href="category.html?cat=Sports">Sports & Wellness</a></li>
+                    <li><a href="category.html?cat=Baby">Baby Products</a></li>
+                    <li><a href="category.html">All Products</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-banner">
+                    <div class="hero-text">
+                        <h2>Rwanda's Online Supermarket</h2>
+                        <p>Get the best deals on household items at Simba Supermarket.</p>
+                        <a href="category.html" class="btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flash-sale container">
+            <div class="section-header">
+                <h3><i class="fas fa-bolt"></i> Daily Fresh Deals</h3>
+                <div class="timer">
+                    Ends in: <span id="countdown">00:00:00</span>
+                </div>
+                <a href="category.html" class="view-all">View All ></a>
+            </div>
+            <div id="product-list" class="product-grid">
+                <!-- Loaded via scripts.js -->
+            </div>
+        </section>
+
+        <section class="features container">
+            <div class="feature-item">
+                <i class="fas fa-shipping-fast"></i>
+                <div class="feature-text">
+                    <h4>Fast Delivery</h4>
+                    <p>Within 2 hours in Kigali</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <div class="feature-text">
+                    <h4>Safe Payment</h4>
+                    <p>100% secure checkout</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-leaf"></i>
+                <div class="feature-text">
+                    <h4>Quality Guaranteed</h4>
+                    <p>Only the best for you</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>About Simba</h3>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="contact.html">Location: Kigali, Rwanda</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="help.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter">
+                <h3>Join Our Newsletter</h3>
+                <p>Stay updated on the latest offers from Simba Supermarket.</p>
+                <form>
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Simba Supermarket. <i class="fas fa-paw"></i> Built for Rwanda.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
